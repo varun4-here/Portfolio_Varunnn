@@ -1,0 +1,91 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh;
+    background-color: #04d1ff;
+    color: #f0f0f0;
+    background-image: url('path/to/retro-background.png');
+    background-size: cover;
+    overflow: hidden;
+  }
+  .navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    position: absolute;
+    top: 0;
+  }
+  .navbar a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 2rem;
+    position: relative;
+  }
+  .navbar a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ff6b6b;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  .frame {
+    padding: 20px; /* Add padding around the container */
+    background-color: #000; /* Frame color */
+    border: 5px solid #ff6b6b; /* Frame border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Shadow for 3D effect */
+  }
+  .container {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+  }
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #ff6b6b;
+  }
+  .subtitle div {
+    margin-bottom: 2rem;
+    line-height: 3;
+    font-size: 1rem;
+    color: #fff;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .links a {
+    text-decoration: none;
+    color: #ff6b6b;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    display: block;
+  }
+  .links a.active {
+    background-color: #ff6b6b;
+    color: #060606;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+ 
